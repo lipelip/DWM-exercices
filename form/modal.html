@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Stripe formulaire</title>
+		<meta charset="UTF-8" />
+		
+	</head>
+	<body>
+
+		<h1>Exo Stripe Form</h1>
+		<button>Payer</button>
+
+		<div class="stripeModal">
+			
+			<header>
+				<button>Fermer</button>
+				<h2>Dribbble</h2>
+				<p>Pro account 1 year</p>
+			</header>
+			<form action="#" method="post">
+				
+				<div>
+					
+					<label for="email">Email</label>
+					<input required id="email" type="email" name="email" placeholder="Adresse email" />
+
+				</div>
+
+				<ul>
+					<li>
+						<label for="carte">Numéro de carte</label>
+						<input required id="carte" type="text" name="carte" placeholder="Numéro de carte" />
+					</li>
+					<li>
+						<label for="valide">Validité</label>
+						<input required id="valide" type="text" name="valide" placeholder="MM / AA" />
+					</li>
+					<li>
+						<label for="verif">Numéro de vérification</label>
+						<input required id="verif" type="text" name="verif" placeholder="CVV" />
+					</li>
+				</ul>
+
+				<div>
+					
+					<input id="remember" type="checkbox" name="remember" value="true" />
+					<label for="remember">Se souvenir de moi</label>
+
+					<div>
+						<label for="tel"><a href="#">Stripe</a> store your payment info for quick checkout on this site and others. For security, please enter <span class="bold">your mobile phone number:</span></label>
+						<input id="tel" type="tel" name="tel" />
+
+					</div>
+
+				</div>
+				
+				<button type="submit">Pay $18.00</button>				
+
+			</form>
+		</div>
+
+	</body>
+</html>
+
+
+
+
+
+
